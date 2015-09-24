@@ -115,16 +115,8 @@ namespace DivisibleFunction_Level2
                 {
                     divby8 = divby8 - 9;
                 }
-                if (divby8 == (x - ((x >> 3) << 3)))
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                return divby8 == (x - ((x >> 3) << 3));
             }
-
             return false;
         }
 
